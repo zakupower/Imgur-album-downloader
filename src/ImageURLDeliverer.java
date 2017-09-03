@@ -22,7 +22,7 @@ public class ImageURLDeliverer {
             HttpClient client = HttpClientBuilder.create().build();
             String getURL = "https://api.imgur.com/3/album/"+albumHash+"/images";
             HttpGet get = new HttpGet(getURL);
-            get.setHeader("authorization", "Client-ID 27fcf6e736ad63d");
+            get.setHeader("authorization", "Client-ID ********"); // app client id
             HttpResponse responseGet = client.execute(get);
 
             System.out.println(responseGet.getStatusLine().toString());
